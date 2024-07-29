@@ -11,7 +11,7 @@
                 <img alt="image"
                     src="{{ Auth::user()->photo ? Storage::url(Auth::user()->photo) : asset('img/preview-default.jpg') }}"
                     class="rounded-circle mr-1">
-                <div class="d-lg-inline-block">Halo, {{ Auth::user()->name }} | {{ Auth::user()->role }}</div>
+                <div class="d-inline-block">Halo, {{ Auth::user()->name }} | {{ Auth::user()->role }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <a href="#" class="dropdown-item has-icon text-danger"
