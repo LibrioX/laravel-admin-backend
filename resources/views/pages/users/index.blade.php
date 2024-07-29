@@ -90,7 +90,8 @@
                                                             Edit
                                                         </a>
 
-                                                        <form onsubmit="return confirm('Apakah Anda Yakin ?');"
+                                                        <form
+                                                            onsubmit="return confirm('Apakah Anda Yakin Untuk Menghapus Data Ini ?');"
                                                             action="{{ route('users.destroy', $user->id) }}" method="POST"
                                                             class="ml-2">
                                                             <input type="hidden" name="_method" value="DELETE" />
